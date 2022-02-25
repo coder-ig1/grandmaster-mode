@@ -60,10 +60,6 @@ scoreboard players add Timer CreeperInvis 1
 scoreboard players add Timer CreeperDash 1
 scoreboard players add Timer EndDragon6 1
 
-#Perma hard mode
-
-difficulty hard
-
 #Wither Attacks
 
 execute as @a if score Timer WitherSpecial matches 400 run execute at @e[type=wither] run summon minecraft:wither_skeleton
