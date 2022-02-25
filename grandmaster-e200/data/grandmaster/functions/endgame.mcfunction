@@ -5,3 +5,4 @@ execute if score Timer Endgame matches 2 run function grandmaster:nb
 execute if score Timer Endgame matches 3 run function grandmaster:nl
 execute if score Timer Endgame matches 4 run function grandmaster:nc
 execute if score Timer Endgame matches 5 run function grandmaster:nh
+execute if score Timer Endgame matches 6.. run scoreboard players set Timer Endgame 0
