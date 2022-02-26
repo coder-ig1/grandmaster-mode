@@ -15,10 +15,6 @@ scoreboard players add Timer RandomInfect 1
 scoreboard players add Timer CreeperInvis 1
 scoreboard players add Timer CreeperDash 1
 scoreboard players add Timer EndDragon6 1
-
-
-
-
 #Reaper Spawning
 
 execute as @e[type=creeper,tag=!not_reaper,sort=random] at @s run function grandmaster:reaper
