@@ -1,3 +1,8 @@
+scoreboard players add Timer EndDragon 1
+scoreboard players add Timer EndDragon2 1
+scoreboard players add Timer EndDragon3 1
+scoreboard players add Timer EndDragon4 1
+scoreboard players add Timer EndDragon6 1
 execute as @a if score Timer EndDragon matches 1000 run execute at @e[type=player,tag=Inend] run execute if entity @e[type=ender_dragon] run summon minecraft:area_effect_cloud ~ ~ ~ {Particle:"portal",Radius:20f,Duration:80,Potion:"minecraft:harming",CustomName:'{"text":"Dragon\'s Wrath","color":"dark_purple"}'}
 execute as @a if score Timer EndDragon matches 1000 run execute at @e[type=ender_dragon] run playsound entity.ender_dragon.ambient ambient @a[tag=Inend] ~ ~ ~ 99999999 0
 execute as @a if score Timer EndDragon matches 1000 run execute at @e[type=ender_dragon] run playsound minecraft:entity.lightning_bolt.thunder ambient @a ~ ~ ~ 9999999 0

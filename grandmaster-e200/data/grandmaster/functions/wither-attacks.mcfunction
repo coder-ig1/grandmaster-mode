@@ -1,3 +1,7 @@
+scoreboard players add Timer WitherSpecial 1
+scoreboard players add Timer WitherSpecial2 1
+scoreboard players add Timer WitherSpecial3 1
+scoreboard players add Timer WitherSpecial4 1
 execute as @a if score Timer WitherSpecial matches 400 run execute at @e[type=wither] run summon minecraft:wither_skeleton
 execute as @a if score Timer WitherSpecial matches 400 run execute at @e[type=wither] run summon minecraft:wither_skeleton
 execute as @a if score Timer WitherSpecial matches 400 run execute at @e[type=wither] run summon minecraft:wither_skeleton
