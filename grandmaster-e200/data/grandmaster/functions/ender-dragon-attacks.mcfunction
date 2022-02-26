@@ -5,6 +5,7 @@ execute as @a if score Timer EndDragon matches 1000.. run scoreboard players res
 execute if entity @e[type=ender_dragon] run schedule function grandmaster:dragon 30s append
 execute as @a if score Timer EndDragon3 matches 750 run scoreboard players set Timer EndDragonT 1
 execute as @a if score Timer EndDragonT matches 1 run scoreboard players add Timer EndDragonE 1
+execute as @a if score Timer EndDragonE matches 20 run execute if entity @e[type=ender_dragon] run execute at @a run summon lightning_bolt ~ ~ ~
 execute as @a if score Timer EndDragonE matches 40 run execute if entity @e[type=ender_dragon] run execute at @a run summon lightning_bolt ~ ~ ~
 execute as @a if score Timer EndDragonE matches 60 run execute if entity @e[type=ender_dragon] run execute at @a run summon lightning_bolt ~ ~ ~
 execute as @a if score Timer EndDragonE matches 80 run execute if entity @e[type=ender_dragon] run execute at @a run summon lightning_bolt ~ ~ ~
