@@ -132,24 +132,10 @@ execute as @a if score Timer EndDragonE matches 300 run execute if entity @e[typ
 execute as @a if score Timer EndDragonE matches 300.. run scoreboard players reset Timer EndDragon3
 execute as @a if score Timer EndDragonE matches 300.. run scoreboard players reset Timer EndDragonT
 execute as @a if score Timer EndDragonE matches 300.. run scoreboard players reset Timer EndDragonE
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[1.0,-2.0,0.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[1.0,-2.0,0.5]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[1.0,-2.0,1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[0.5,-2.0,1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[0.25,-2.0,1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-0.0,-2.0,1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-0.5,-2.0,1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-1.5,-2.0,0.5]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-1.5,-2.0,0.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-1.5,-2.0,-0.5]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-1.5,-2.0,-1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-1.0,-2.0,-1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-0.5,-2.0,-1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[-0.0,-2.0,-1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[0.5,-2.0,-1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[1.0,-2.0,-1.0]}
-execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run summon minecraft:dragon_fireball ~ ~-1 ~ {Motion:[1.0,-2.0,-0.5]}
-execute as @a if score Timer EndDragon4 matches 1600.. run scoreboard players reset Timer EndDragon4
+
+#triggers EndDragon4
+
+execute as @a if score Timer EndDragon4 matches 1600 run execute at @e[type=ender_dragon] run function grandmaster:ender-dragon-attack-4
 
 execute if entity @a[tag=Inend] run execute as @e[type=minecraft:end_crystal,nbt={ShowBottom:1b}] at @s run fill ~-2 ~-1 ~-2 ~2 ~2 ~2 iron_bars
 execute if entity @a[tag=Inend] run execute as @e[type=minecraft:end_crystal,nbt={ShowBottom:1b}] at @s run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 air
