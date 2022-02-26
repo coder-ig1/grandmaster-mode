@@ -111,7 +111,7 @@ execute as @a if score Timer EndDragon matches 1000 run execute at @e[type=playe
 execute as @a if score Timer EndDragon matches 1000 run execute at @e[type=ender_dragon] run playsound entity.ender_dragon.ambient ambient @a[tag=Inend] ~ ~ ~ 99999999 0
 execute as @a if score Timer EndDragon matches 1000 run execute at @e[type=ender_dragon] run playsound minecraft:entity.lightning_bolt.thunder ambient @a ~ ~ ~ 9999999 0
 execute as @a if score Timer EndDragon matches 1000.. run scoreboard players reset Timer EndDragon
-execute if entity @e[type=ender_dragon] at @e[type=ender_dragon] run schedule function grandmaster:dragon 30s append
+execute if entity @e[type=ender_dragon] run schedule function grandmaster:dragon 30s append
 execute as @a if score Timer EndDragon3 matches 750 run scoreboard players set Timer EndDragonT 1
 execute as @a if score Timer EndDragonT matches 1 run scoreboard players add Timer EndDragonE 1
 execute as @a if score Timer EndDragonE matches 20 run execute if entity @e[type=ender_dragon] run execute at @a run summon lightning_bolt ~ ~ ~
